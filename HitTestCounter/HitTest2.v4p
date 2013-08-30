@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.dtd" >
    <PATCH nodename="C:\Users\Uberact\Documents\GitHub\HL-UBR\HitTestCounter\HitTest2.v4p" systemname="HitTest2" filename="C:\Users\Uberact\Documents\GitHub\HL-UBR\HitTestCounter\HitTest2.v4p">
-   <BOUNDS type="Window" left="1290" top="270" width="14400" height="15600">
+   <BOUNDS type="Window" left="6435" top="1710" width="14400" height="15600">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1635" top="14295" width="11385" height="270">
@@ -465,7 +465,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="197" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3615" top="15255" width="795" height="240">
+   <BOUNDS type="Box" left="3615" top="15255" width="825" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="3615" top="15255" width="0" height="0">
    </BOUNDS>
@@ -479,9 +479,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="198" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5190" top="15030" width="795" height="240">
+   <BOUNDS type="Box" left="4770" top="15315" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5190" top="15030" width="0" height="0">
+   <BOUNDS type="Node" left="4770" top="15315" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="9">
    </PIN>
@@ -514,6 +514,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Actual Backbuffer Height|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Actual Backbuffer Height" dstnodeid="200" dstpinname="Y Input Value">
