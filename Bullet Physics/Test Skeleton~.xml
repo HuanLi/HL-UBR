@@ -1,0 +1,203 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.dtd" >
+   <PATCH nodename="C:\Users\Uberact\Documents\_Temp Folder HL\Test Skeleton.v4p" systemname="Test Skeleton" filename="C:\Users\Uberact\Documents\_Temp Folder HL\Test Skeleton.v4p">
+   <BOUNDS type="Window" left="8670" top="1185" width="10170" height="12840">
+   </BOUNDS>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2865" top="2370" width="4275" height="270">
+   </BOUNDS>
+   <PIN pinname="Joint Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children Count" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Rotation Constraints MinMax" visible="1" pintype="Input" slicecount="2" values="-1,1">
+   </PIN>
+   <PIN pinname="Child1" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Child2" visible="1">
+   </PIN>
+   <PIN pinname="Child3" visible="1">
+   </PIN>
+   <PIN pinname="Child4" visible="1">
+   </PIN>
+   <PIN pinname="Child5" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="240" top="1590" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="240" top="1590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Joint Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Joint Name">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2445" top="1245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="0" dstpinname="Base Transform">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3645" top="1185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Skeleton" dstnodeid="0" dstpinname="Child1">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3615" top="720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="5" dstpinname="Base Transform">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4905" top="1140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4875" top="675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="8" dstpinname="Base Transform">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Skeleton" dstnodeid="0" dstpinname="Child2">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="6150" top="990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="6120" top="525" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="10" dstpinname="Base Transform">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Skeleton" dstnodeid="0" dstpinname="Child3">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="7080" top="1320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="7050" top="855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="12" dstpinname="Base Transform">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Skeleton" dstnodeid="0" dstpinname="Child4">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="7980" top="1290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="7950" top="825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="14" dstpinname="Base Transform">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Skeleton" dstnodeid="0" dstpinname="Child5">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="2295" top="3825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Child1" visible="1">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Skeleton" dstnodeid="15" dstpinname="Child1">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1965" top="3150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="15" dstpinname="Base Transform">
+   </LINK>
+   <NODE systemname="Joint (Skeleton Join)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="Joint (Skeleton Join)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1830" top="4650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Child1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Base Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1260" top="3915" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Transform Out" dstnodeid="17" dstpinname="Base Transform">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Skeleton" dstnodeid="17" dstpinname="Child1">
+   </LINK>
+   <NODE systemname="SelectJoint (Skeleton GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\SkeletonNodes.dll" nodename="SelectJoint (Skeleton GUI)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="2250" top="6390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2250" top="6390" width="3000" height="1500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="21225" top="14325" width="6240" height="6510">
+   </BOUNDS>
+   <PIN pinname="Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Window Handle" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Joint Name" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Skeleton" dstnodeid="19" dstpinname="Skeleton">
+   </LINK>
+   </PATCH>
