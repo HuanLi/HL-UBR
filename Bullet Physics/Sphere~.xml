@@ -1,0 +1,303 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\Uberact\Documents\GitHub\HL-UBR\Bullet Physics\Sphere.v4p" systemname="Sphere" filename="C:\Users\Uberact\Documents\GitHub\HL-UBR\Bullet Physics\Sphere.v4p">
+   <NODE id="0" nodename="IOBox (Color)" componentmode="InABox" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="4260" top="3205" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4260" top="3205" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.33064,0.60484,0.69418,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="IOBox (Color)" componentmode="InABox" systemname="IOBox (Color)">
+   <PIN pinname="Color Input" slicecount="1" values="|1.00000,0.74085,0.58482,1.00000|">
+   </PIN>
+   <BOUNDS type="Box" left="3555" top="2500" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3555" top="2500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="Cons (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Color)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3510" top="4045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1590" top="5800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Ambient Color" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden">
+   <BOUNDS type="Node" left="930" top="4675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Resolution Y" slicecount="1" values="99">
+   </PIN>
+   <PIN pinname="Color">
+   </PIN>
+   <PIN pinname="Cycles U" visible="1">
+   </PIN>
+   <PIN pinname="Cycles V">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform">
+   </PIN>
+   <BOUNDS type="Box" left="1590" top="1500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1590" top="1500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="8160" top="5275" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" visible="1">
+   </PIN>
+   <PIN pinname="Output X" visible="1">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   <PIN pinname="Factor" slicecount="1" values="0.48">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7635" top="4210" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7635" top="4210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="6660" top="4750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="Centered">
+   </PIN>
+   <PIN pinname="Phase" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Segment (DX9)" filename="" nodename="Segment (DX9)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="6450" top="6580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Resolution" slicecount="1" values="157">
+   </PIN>
+   <PIN pinname="Inner Radius" slicecount="1" values="10.72">
+   </PIN>
+   <PIN pinname="Cycles" slicecount="1" values="0.29">
+   </PIN>
+   <PIN pinname="Draw Slicewise" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="9060" top="4210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Pause" visible="1">
+   </PIN>
+   <PIN pinname="Phase" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="6540" top="5560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="CenterX" slicecount="1" values="0.06">
+   </PIN>
+   <PIN pinname="CenterY" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="9990" top="5890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0.94" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" values="1.08" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0.56">
+   </PIN>
+   </NODE>
+   <NODE systemname="CircularSpread (Spreads)" nodename="CircularSpread (Spreads)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="10860" top="5320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output X" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="64">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   <PIN pinname="Input Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input X" slicecount="1" values="-0.24">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1.08">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Factor" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="10170" top="1645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Pause" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="1.39">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8730" top="460" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8730" top="460" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blend (EX9.RenderState)" filename="" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5310" top="5500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" slicecount="1" values="Add">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="3" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Ambient Color">
+   </LINK>
+   <NODE id="17" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="1590" top="7180" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1590" top="7180" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="17" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Color Output" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Render State Out" dstnodeid="9" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="9" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="9" dstpinname="Color">
+   </LINK>
+   <NODE id="18" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 1|">
+   </PIN>
+   <BOUNDS type="Box" left="6450" top="7180" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6450" top="7180" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="18" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="11" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="11" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="11" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output X" dstnodeid="11" dstpinname="Rotate">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="6" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Pause">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output X" dstnodeid="12" dstpinname="Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Pause">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="13" dstpinname="Phase">
+   </LINK>
+   <BOUNDS type="Window" left="5385" top="4665" width="12465" height="8175">
+   </BOUNDS>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="12" dstpinname="Saturation">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="12" dstpinname="Hue">
+   <LINKPOINT x="10230" y="1830">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>
